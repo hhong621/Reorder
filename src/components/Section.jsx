@@ -1,5 +1,5 @@
 export default function Section(props) {
-    const { id, items, icon } = props;
+    const { id, title, icon, items } = props;
 
     return (
         <div className="section">
@@ -11,7 +11,7 @@ export default function Section(props) {
                 }}
             >
                 <span className="material-symbols-outlined" style={{color: "#2C83E6"}}>{icon}</span>
-                <span style={{fontWeight: "700"}}>Section {id}</span>
+                <span style={{fontWeight: "700"}}>{title}</span>
             </div>
             <div>
                 {items}
